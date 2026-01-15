@@ -720,3 +720,8 @@ _This ensures a seamless user experience without forcing repeated logins._
 ## 📜 License
 
 This project is licensed under the GPL3.0 License - see the [LICENSE](LICENSE.txt) file for details.
+
+<!-- Stargazers generated automatically with npx @titenq/stargazers -->
+## ⭐ Stargazers
+
+This repository has no stargazers yet. Be the first!
