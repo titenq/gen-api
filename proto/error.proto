@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package error;
+
+message GenericError {
+  bool error = 1;
+  string message = 2;
+  int32 statusCode = 3;
+}

@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      target: dev
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "${PORT}:3300"
+    command: npm run dev
+
+  mongo:
+    ports:
+      - "${DB_PORT}:${DB_PORT}"
