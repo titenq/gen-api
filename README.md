@@ -722,6 +722,7 @@ _This ensures a seamless user experience without forcing repeated logins._
 This project is licensed under the GPL3.0 License - see the [LICENSE](LICENSE.txt) file for details.
 
 <!-- Stargazers generated automatically with npx @titenq/stargazers -->
+
 ## ⭐ Stargazers
 
-This repository has no stargazers yet. Be the first!
+[<img src="https://avatars.githubusercontent.com/u/26114020?v=4&s=80" width="80" height="80" alt="washalbano" title="washalbano" />](https://github.com/washalbano)
