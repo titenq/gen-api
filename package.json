@@ -1,7 +1,7 @@
 {
   "name": "gen-api",
   "version": "1.0.0",
-  "description": "A high-performance API boilerplate built with TypeScript, Fastify, MongoDB and more.",
+  "description": "A high-performance API boilerplate built with TypeScript, Fastify, MongoDB and more. Features complete JWT authentication with access/refresh tokens and secure cookies.",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
