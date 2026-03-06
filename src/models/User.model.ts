@@ -1,9 +1,12 @@
 import argon2 from "argon2";
 
+import env from "@/config/env";
 import mongoose from "@/db";
 import { Roles } from "@/enums/user.enum";
 import { UserInterface } from "@/interfaces";
 import normalizeString from "@/helpers/normalize-string";
+
+const { ARGON2_PEPPER } = env;
 
 const UserSchema = new mongoose.Schema<UserInterface.IUserModel>(
   {
@@ -59,8 +62,9 @@ UserSchema.pre("save", async function () {
   if (this.isModified("password")) {
     this.password = await argon2.hash(this.password, {
       type: argon2.argon2id,
-      memoryCost: 1024,
-      timeCost: 5,
+      secret: Buffer.from(ARGON2_PEPPER, "base64"),
+      memoryCost: 65536,
+      timeCost: 3,
       parallelism: 1,
     });
   }

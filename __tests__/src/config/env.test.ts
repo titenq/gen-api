@@ -46,6 +46,7 @@ describe("src/config/env.ts", () => {
     RABBITMQ_PASSWORD: "password",
     ENC_KEY: "key",
     IV: "iv",
+    ARGON2_PEPPER: "pepper",
     COOKIE_SECRET: "secret",
     JWT_SECRET: "secret",
     EMAIL_USER: "email@example.com",

@@ -27,6 +27,7 @@ const envSchema = z.object({
   RABBITMQ_PASSWORD: z.string(),
   ENC_KEY: z.string(),
   IV: z.string(),
+  ARGON2_PEPPER: z.string(),
   COOKIE_SECRET: z.string(),
   JWT_SECRET: z.string(),
   EMAIL_USER: z.string(),
